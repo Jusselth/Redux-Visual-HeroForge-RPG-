@@ -15,7 +15,7 @@ export const actionLogSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder.addMatcher(
-            (action) => action.type.startsWith('stats/') || action.type.startsWith('inventory/'),
+            (action): action is PayloadAction<unknown> => action.type.startsWith('stats/') || action.type.startsWith('inventory/'),
             (state, action) => {
                 let payloadStr = 'Sin Payload';
                 if (typeof action.payload === 'string' || typeof action.payload === 'number') {
