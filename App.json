@@ -1,0 +1,10 @@
+{
+    "expo": {
+        "name": "HeroForge RPG",
+        "slug": "redux-visual-heroforge-rpg",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "dark",
+        "backgroundColor": "#0f172a"
+    }
+}
